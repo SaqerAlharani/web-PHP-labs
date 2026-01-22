@@ -1,0 +1,72 @@
+Difference Between MySQL and MariaDB
+The difference between MySQL and MariaDB is considered a very important topic in the field of databases, especially due to the close relationship between them.
+MariaDB was originally created as a fork of MySQL by the original creator of MySQL, Michael “Monty” Widenius, after concerns arose regarding Oracle’s acquisition and control of the MySQL project.
+
+Below are the most important fundamental differences between the two systems:
+
+1. Licensing and Development Model
+MariaDB
+MariaDB is fully committed to the open-source philosophy and is released under the GPL license.
+All of its features are freely available, ensuring transparency and continuous community-driven development.
+
+MySQL
+MySQL follows a dual-licensing model and is owned by Oracle Corporation.
+While a free Community Edition exists, many advanced features and tools are only available in the Enterprise (paid) editions, which include proprietary components.
+
+2. Performance and Speed
+MariaDB
+MariaDB often demonstrates better performance, especially in complex queries and high-concurrency environments.
+It benefits from advanced storage engines such as Aria and ColumnStore, and generally handles a large number of simultaneous connections more efficiently.
+
+MySQL
+MySQL prioritizes stability and reliability, particularly in enterprise environments.
+However, in some scenarios, especially with complex queries, it may perform slightly slower compared to MariaDB unless enterprise-level optimizations are used.
+
+3. Storage Engines and Technical Features
+MariaDB
+MariaDB provides more storage engines by default and supports advanced features such as:
+
+Dynamic Columns
+
+Multi-source replication
+
+These features give developers more flexibility and control.
+
+MySQL
+Recent versions of MySQL introduced strong features such as:
+
+Advanced JSON support
+
+Common Table Expressions (CTE)
+
+Although these features now exist in both systems, their implementation details differ slightly.
+
+4. Compatibility
+MariaDB
+MariaDB is designed as a drop-in replacement for MySQL.
+This means MySQL-based applications can usually switch to MariaDB without changing PHP code, as they use the same ports (default 3306) and APIs.
+
+MySQL
+Starting from newer versions such as MySQL 8.0, MySQL has begun to diverge slightly from MariaDB, which may require additional care when migrating from MySQL to MariaDB.
+
+Quick Comparison Table
+Feature	MySQL	MariaDB
+Main Developer	Oracle Corporation	MariaDB Foundation (Community-driven)
+Primary Focus	Stability and enterprise integration	Performance, innovation, openness
+JSON Support	Very advanced and well-structured	Very good
+Data Encryption	Mostly available in paid editions	Available in the free version
+
+Which One Should You Choose?
+Choose MariaDB if you are looking for:
+
+High performance
+
+Fully open-source software
+
+Advanced features without additional cost
+
+Choose MySQL if you:
+
+Work in an environment heavily integrated with Oracle products
+
+Prefer using the most widely adopted industry standard with strong corporate backing
